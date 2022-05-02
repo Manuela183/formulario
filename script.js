@@ -20,3 +20,9 @@ function validarContrasena(){
         contrasena.style.boxShadow = 'green'
     }
 }
+
+function pruebas(){
+    let mensaje = document.getElementById("nombre").value;
+    mensaje = mensaje.toUpperCase();
+    alert("Entrada: " + mensaje)
+}
