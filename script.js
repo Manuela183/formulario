@@ -1,20 +1,13 @@
-//  let validarRadio = document.getElementById('flexRadioDefault1')
-//validarRadio.onclick = function(){desplegar()};
-
-function desplegar(){
-    alert("Hola?")
-}
-
-
-let verificarContrasena = document.getElementById('verificarContrasena')
-
 function validarContrasena(){
     let contrasena = document.getElementById('contrasena')
     let verificarContrasena = document.getElementById('verificarContrasena')
-    if (contrasena == verificarContrasena){
-        console.log("si")
+
+    if (contrasena.textContent == verificarContrasena.textContent){
+        verificarContrasena.style.boxShadow = 'green'
+        contrasena.style.boxShadow = 'green'
     }else{
-        console.log("no")
+        verificarContrasena.style.boxShadow = 'green'
+        contrasena.style.boxShadow = 'green'
     }
 }
 
