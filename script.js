@@ -1,4 +1,4 @@
-function verificarContrasena(){
+function validarContrasena(){
     let contrasena = document.getElementById('contrasena')
     let verificarContrasena = document.getElementById('verificarContrasena')
     if (contrasena == verificarContrasena){
@@ -6,4 +6,9 @@ function verificarContrasena(){
     }else{
         console.log("no")
     }
+}
+
+
+function locota(){
+    alert("re locota")
 }
