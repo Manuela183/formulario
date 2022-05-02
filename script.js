@@ -3,13 +3,10 @@ function validarContrasena(){
     let verificarContrasena = document.getElementById('verificarContrasena')
 
     if (contrasena.textContent == verificarContrasena.textContent){
-        verificarContrasena.style.borderColor = 'green'
-        console.log("dasdas")
+        verificarContrasena.style.boxShadow = 'green'
+        contrasena.style.boxShadow = 'green'
     }else{
-        verificarContrasena.style.borderStyle = 'red'
+        verificarContrasena.style.boxShadow = 'green'
+        contrasena.style.boxShadow = 'green'
     }
-}
-
-function desplegar() {
-    alert("fasdsa")
 }
