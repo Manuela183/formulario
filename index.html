@@ -26,13 +26,15 @@
         <label for="registro">¿Se desea registrar?</label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="desplegar()">
         <label class="form-check-label" for="flexRadioDefault1">
           Si
         </label>
+        
       </div>
+
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
         <label class="form-check-label" for="flexRadioDefault2">
           No
         </label>
@@ -74,18 +76,22 @@
 
     <div class="form-group">
       <label for="email">Contraseña:</label>
-      <input type="password" class="form-control" id="contrasena">
+      <input type="password" class="form-control" id="contrasena" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*/-]).{8,}$">
     </div>
     <div class="form-group">
       <label for="pwd">Verificar contraseña:</label>
-      <input type="password" class="form-control" id="verificarContrasena">
+      <input type="password" class="form-control" id="verificarContrasena" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*/-]).{8,}$" onmouseout="verificarContrasena()">
     </div>
     <div class="checkbox">
     </div>
     <br>
     <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+
   </div>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
