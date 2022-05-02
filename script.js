@@ -12,12 +12,14 @@ function validarContrasena(){
     let contrasena = document.getElementById('contrasena')
     let verificarContrasena = document.getElementById('verificarContrasena')
 
-    if (contrasena.textContent == verificarContrasena.textContent){
-        verificarContrasena.style.boxShadow = 'green'
-        contrasena.style.boxShadow = 'green'
+    if (contrasena.value == verificarContrasena.value){
+        verificarContrasena.style.border = "1px solid"
+        verificarContrasena.style.borderColor = 'green'
+        contrasena.style.borderColor = 'green'
     }else{
-        verificarContrasena.style.boxShadow = 'green'
-        contrasena.style.boxShadow = 'green'
+        verificarContrasena.style.border = "3px solid"
+        verificarContrasena.style.borderColor = 'red'
+        contrasena.style.borderColor = 'red'
     }
 }
 
