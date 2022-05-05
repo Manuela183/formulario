@@ -1,11 +1,31 @@
+document.getElementById("select-F").style.display="none";
+document.getElementById("select-M").style.display="none";
 function desplegar(){
     let radioSeleccionado = document.getElementById("flexRadioDefault1");
 
     if(radioSeleccionado.spellcheck){
-        alert("asdjkasdjkasdjk");
+        document.getElementById("select-F").style.display="inline";
+        document.getElementById("select-M").style.display="inline";
+    }
+}
+function desplegar2(){
+    let radioSeleccionado2 = document.getElementById("flexRadioDefault2");
 
-    }else{
+    if(radioSeleccionado2.spellcheck){
+        document.getElementById("select-F").style.display="none";
+        document.getElementById("select-M").style.display="none";
+    }
+}
 
+function check1(checkbox) {
+    if (checkbox.checked) {
+    document.getElementById("checkBox2").checked = false;
+    }
+}
+
+function check2(checkbox) {
+    if (checkbox.checked) {
+    document.getElementById("checkBox1").checked = false;
     }
 }
 function validarContrasena(){
